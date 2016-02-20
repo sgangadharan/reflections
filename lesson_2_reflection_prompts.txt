@@ -1,39 +1,11 @@
-How did viewing a diff between two versions of a file help you see the bug that
-was introduced?
 
-    Was able to easily spot the difference. But understand this would be difficult if the text was few 1000 lines
-
-How could having easy access to the entire history of a file make you a more
-efficient programmer in the long term?
-
-    Understanding the changes to a code gives insight into the product development. Errors made and fixes proposed.
-
-What do you think are the pros and cons of manually choosing when to create a
-commit, like you do in Git, vs having versions automatically saved, like Google
-docs does?
-
-    Pros:
-    you can commit your changes after complete testing.
-    The number of versions of changes will vastly reduced as you commit only after you have fully reviewed and tested the changes
-    Each commit is a logical completion of a task
-    Cons:
-    Possible loss of data if your harddisk or OS crashes your computer. Possible loss of code and effort when not saved.
-
-
-Why do you think some version control systems, like Git, allow saving multiple
-files in one commit, while others, like Google Docs, treat each file separately?
-
-    This is done so as to get the state of all files between two logical commits. Commits help you to compare to logical end points in the course of development of a feature or functionality.
-
-How can you use the commands git log and git diff to view the history of files?
-
-    Have not used Git yet
-
-How might using version control make you more confident to make changes that
-could break something?
-
-    Ease of accessibility to change revisions, understanding differences between older code and current, etc
-
-Now that you have your workspace set up, what do you want to try using Git for?
-
-    projects and code that i usually create, i end up saving them on my harddisk and over a period of time i dont recollect some changes or dont have version controlled revisions that i could visit and review them.
+How can you use the staging area to make sure you have one commit per logical change?
+The staging area can be used to compare against the Working directory. The working directory contains all the changes.
+To add files to the staging area use
+git add filename
+this adds files to the staging area then perform the 
+Git commit 
+to save all the changes. 
+If you want to remove all changes use the 
+git reset —-hard
+this will undo all the changes (careful!!! all changes in all files will be reset)
