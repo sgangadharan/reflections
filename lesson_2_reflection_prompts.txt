@@ -9,3 +9,15 @@ to save all the changes.
 If you want to remove all changes use the 
 git reset —-hard
 this will undo all the changes (careful!!! all changes in all files will be reset)
+
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+Branches are helpful when creating new changes but you don’t want to modify the same on the main branch ex: experimental changes.
+use 
+git branch some_name
+to create new branch. To go to this branch use
+git checkout some_name
+make changes by doing “git add” and “git commit” it gets save to branch some_name
+
+How do the diagrams help you visualize the branch structure?
+the diagrams help to understand the different branches that the user created and the ones that are not merged to the “master” branch. This will be helpful for making experimental changes without affecting the main branch.
